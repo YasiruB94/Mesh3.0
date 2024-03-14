@@ -1,0 +1,51 @@
+The changes we did in the menuconfig
+
+Production Release for Bootloader log verbosity
+                                                - both set to error
+
+Serial Flasher Config - Flash SPI mode QIO
+Serial  SPI Speed - 80 MHZ
+Flash Size should be 4MB
+
+Enable Amazong Web Services IoT Platform also add to Cmake lists
+Set ESP32 specific CPu Frequency to 240MHz
+
+max number of wifi static rx buffers -> 6
+max number of wifi dynamic RX buffers - > 15
+max number of wifi dynamic TX buffers - 20
+disable wifi ampdu TX, enable RX
+
+
+For node disable ESP HTTP Clien disable "Enable HTTPS"
+
+Default Log verbosity, no output for nodes Warning for root
+
+
+MCommon
+Mesh Layer Log - no output for nodes and warning for root
+
+Disable memory debug in MCommon
+
+FreeRTOS
+Run FreeRTOS only on first core
+
+
+ESP MQTT Configurations
+Only enable MQTT over SSL
+
+MDF Mupgrade
+Number of times the firmware failed to retry -> 5
+How many times to restart continuously -> 5
+
+
+Root Config
+Minimum Scan times before being a root -> 0
+
+Stability Config
+Disable Reselect the root when the RSSI is weak
+
+
+adc to vref efuse only 
+
+
+https://blog.espressif.com/esp32-memory-analysis-case-study-eacc75fe5431 refer to this for memory optimisations

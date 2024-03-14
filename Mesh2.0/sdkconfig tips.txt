@@ -1,0 +1,27 @@
+CONFIG_AWS_IOT_MQTT_TX_BUF_LEN=2048
+CONFIG_AWS_IOT_MQTT_RX_BUF_LEN=2048
+
+max number of wifi static rx buffers = 6
+dynamic buffers = 20
+tx dynamic = 25
+
+wifi ampdu rx disable
+
+https ota allow http = y
+
+CONFIG_TIMER_TASK_STACK_DEPTH=3072
+
+enable iram lwip optimisations
+
+lwip tcp task receive mail box size = 25
+
+# CONFIG_MQTT_PROTOCOL_311 is not set
+CONFIG_MQTT_TRANSPORT_SSL=y
+# CONFIG_MQTT_TRANSPORT_WEBSOCKET is not set
+
+mbedTLS need to enable asymmetric in/out fragment length
+
+
+check https://medium.com/the-esp-journal/esp32-memory-analysis-case-study-eacc75fe5431
+and jigars sdkconfigs
+
